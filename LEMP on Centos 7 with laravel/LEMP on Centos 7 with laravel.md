@@ -64,7 +64,7 @@ Kết quả như dưới
 
 Sau khi cài xong mysql chúng ta cần lấy temporary password mà mysql đã tạo ra cho chính nó để thay mật khẩu cho root
 ```sh
-sudo grep 'temporary password' /var/log/mysqld.log //dMNgqlyYJ7(r
+sudo grep 'temporary password' /var/log/mysqld.log
 ```
 Ở bước trên chúng ta đã lấy mật khẩu tạm và lưu ở đâu đó. Tiếp đến chúng ta sẽ set lại mật khẩu cho root
 ```sh
