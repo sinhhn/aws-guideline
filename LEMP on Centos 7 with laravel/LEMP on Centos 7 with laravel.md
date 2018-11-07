@@ -142,7 +142,7 @@ sudo systemctl start php-fpm
 ```sh
 sudo vi /etc/php.ini
 ```
-Xét `cgi.fix_pathinfo=0` như bên dưới
+Thay đổi thành `cgi.fix_pathinfo=0` như bên dưới
 ![cgi.png](resources/D00538053C1AA33137BB4FFCB9296C84.png)
 
 **e. Cài đặt composer**
