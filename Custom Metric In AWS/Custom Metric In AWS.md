@@ -65,24 +65,24 @@ Login vào aws console và xác nhận thành quả mình vừa làm ra:
 ![memory.png](resources/C5556578CCE001667031B821DC9F1A1C.png)
 
 ### TCP Connection
-![TCP Connection.png](resources/2CDAAA0D24E02C0B7922010A1F7588A8.png =1440x694)
+![TCP Connection.png](resources/2CDAAA0D24E02C0B7922010A1F7588A8.png)
 
 ### IO
-![IO.png](resources/39FE135565F418189C6AEAAAF61C3C13.png =1440x691)
+![IO.png](resources/39FE135565F418189C6AEAAAF61C3C13.png)
 
 ### Accessing User
-![Access.png](resources/7A8317DEC2F3E7C6DFAA038701C800C3.png =1440x693)
+![Access.png](resources/7A8317DEC2F3E7C6DFAA038701C800C3.png)
 
 ### Accessing on TCP 80
-![TCP.png](resources/0B8F02348271A85007889E3D0B79A5C2.png =1440x694)
+![TCP.png](resources/0B8F02348271A85007889E3D0B79A5C2.png)
 
 ## 7. Setting Alarm
 Sau khi đã thực hiện xong việc forward tình trạng resource cho `cloudwatch`. Chúng ta sẽ tiếp tục setting alert cho một trong các resource ấy. Ở đây tôi sẽ ví dụ khi làm việc với `memory usage`
 
 * Tất nhiên bạn phải access vào cloudwatch trước tiên rồi
-![Select metric.png](resources/FEA025CA37770378CE2D7AC5AE8A871B.png =1440x732)
+![Select metric.png](resources/FEA025CA37770378CE2D7AC5AE8A871B.png)
 
 * Sau khi chọn lựa metric bạn hãy setting giá trị để nó alert
-![Alert.png](resources/9391948AE19F5C3CF29F3D2889CECC83.png =1440x699)
+![Alert.png](resources/9391948AE19F5C3CF29F3D2889CECC83.png)
 
 Từ đây bạn sẽ làm được vô vàn thứ hay ho với Alarm đã set ở đây.
