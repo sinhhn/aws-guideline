@@ -62,7 +62,7 @@ Giả sử bạn lưu script bạn tạo phía trên ở `/home/centos/usage.sh`
 Login vào aws console và xác nhận thành quả mình vừa làm ra:
 
 ### Memory Usage
-![memory.png](resources/C5556578CCE001667031B821DC9F1A1C.png =1440x692)
+![memory.png](resources/C5556578CCE001667031B821DC9F1A1C.png)
 
 ### TCP Connection
 ![TCP Connection.png](resources/2CDAAA0D24E02C0B7922010A1F7588A8.png =1440x694)
