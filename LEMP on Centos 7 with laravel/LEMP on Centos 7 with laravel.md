@@ -44,14 +44,17 @@ Kết quả sẽ là
 ![git.png](resources/6A71DE6BB3474A8CF86B2D90E15F300D.png)
 
 ## 2. Cài đặt mysql
+
 Một lần nữa mysql lại không được add sẵn trong repo của CentOS 7 nên chúng ta sẽ cài thủ công. Giả định rằng chúng ta sẽ sử dụng mysql 8x. Trước hết chúng ta truy cập vào [link](https://dev.mysql.com/downloads/repo/yum/) để download package về cho mình
 **a. Download rpm package**
+
 ```sh
 wget https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm
 sudo rpm -ivh mysql80-community-release-el7-1.noarch.rpm
 ```
 
 **b. Cài đặt và config mysql**
+
 Sau khi add xong mysql như trên, chúng ta tiến hành cài đặt nó.
 ```sh
 sudo yum update
@@ -64,7 +67,7 @@ Kết quả như dưới
 
 Sau khi cài xong mysql chúng ta cần lấy temporary password mà mysql đã tạo ra cho chính nó để thay mật khẩu cho root
 ```sh
-sudo grep 'temporary password' /var/log/mysqld.log
+sudo grep 'temporary password' /var/log/mysqld.log //dMNgqlyYJ7(r
 ```
 Ở bước trên chúng ta đã lấy mật khẩu tạm và lưu ở đâu đó. Tiếp đến chúng ta sẽ set lại mật khẩu cho root
 ```sh
