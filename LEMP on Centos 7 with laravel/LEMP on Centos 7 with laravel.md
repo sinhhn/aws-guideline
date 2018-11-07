@@ -44,8 +44,8 @@ Kết quả sẽ là
 ![git.png](resources/6A71DE6BB3474A8CF86B2D90E15F300D.png)
 
 ## 2. Cài đặt mysql
-
 Một lần nữa mysql lại không được add sẵn trong repo của CentOS 7 nên chúng ta sẽ cài thủ công. Giả định rằng chúng ta sẽ sử dụng mysql 8x. Trước hết chúng ta truy cập vào [link](https://dev.mysql.com/downloads/repo/yum/) để download package về cho mình
+
 **a. Download rpm package**
 
 ```sh
