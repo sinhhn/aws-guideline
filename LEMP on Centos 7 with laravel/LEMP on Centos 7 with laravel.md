@@ -142,7 +142,7 @@ sudo systemctl start php-fpm
 ```sh
 sudo vi /etc/php.ini
 ```
-Thay đổi thành `cgi.fix_pathinfo=0` như bên dưới
+Xét `cgi.fix_pathinfo=0` như bên dưới
 ![cgi.png](resources/D00538053C1AA33137BB4FFCB9296C84.png)
 
 **e. Cài đặt composer**
@@ -311,7 +311,7 @@ Vậy chúng ta sẽ cho nó chạy với quyền centos sẽ giải quyết đ�
 ```sh
 sudo vi /etc/php-fpm.d/www.conf
 ```
-![IMAGE](resources/7EB322AC7766D335A2A570CD05DFE7F8.jpg =1440x876)
+![IMAGE](resources/7EB322AC7766D335A2A570CD05DFE7F8.jpg)
 Sau đó reload lại php-fpm
 ```sh
 sudo systemctl reload php-fpm
@@ -321,7 +321,7 @@ Có vẻ vẫn bị 403. Nguyên nhân có thể do SElinux trên centos. Chạy
 sudo chcon -Rv --type=httpd_sys_rw_content_t /sites/blog/
 ```
 Và kết quả sẽ là
-![IMAGE](resources/B11A10551E47578B55E5B6D38E97D1D2.jpg =1440x877)
+![IMAGE](resources/B11A10551E47578B55E5B6D38E97D1D2.jpg)
 
 ## 8. Kết luận
 Vậy chúng ta cần chú ý đến những vấn đề sau để cài đặt và config server chính xác
