@@ -67,7 +67,7 @@ Kết quả như dưới
 
 Sau khi cài xong mysql chúng ta cần lấy temporary password mà mysql đã tạo ra cho chính nó để thay mật khẩu cho root
 ```sh
-sudo grep 'temporary password' /var/log/mysqld.log //dMNgqlyYJ7(r
+sudo grep 'temporary password' /var/log/mysqld.log
 ```
 Ở bước trên chúng ta đã lấy mật khẩu tạm và lưu ở đâu đó. Tiếp đến chúng ta sẽ set lại mật khẩu cho root
 ```sh
@@ -285,7 +285,7 @@ Việc trước tiên chúng ta sẽ kiểm tra log để xem nó đang bị l�
 2018/11/07 09:02:28 [error] 12863#0: *5 "/var/www/blog/public/index.php" is forbidden (13: Permission denied), client: 118.238.220.136, server: 18.179.23.83, request: "GET / HTTP/1.1", host: "18.179.23.83"
 ```
 
-Nghe chừng không có thông tin gì cả. Khoan hãy nhìn lại file `default.conf` nói trên. Sao cgi lại đang được thiết lật như `fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;` thế này nhỉ. Vậy ta phải sửa config cảu `fastcgi`.
+Nghe chừng không có thông tin gì cả. Khoan hãy nhìn lại file `default.conf` nói trên. Sao cgi lại đang được thiết lật như `fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;` thế này nhỉ. Vậy ta phải sửa config của `php-fpm`.
 ```sh
 sudo vi /etc/php-fpm.d/www.conf
 ```
